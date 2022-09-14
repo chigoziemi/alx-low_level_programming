@@ -6,7 +6,7 @@
 void positive_or_negative(int n);
 
 #endif /* MAIN_H */
-cat 2-largest_number.c
+/*cat 2-largest_number.c*/
 #include "main.h"
 
 /**
@@ -19,24 +19,24 @@ cat 2-largest_number.c
 
 int largest_number(int a, int b, int c)
 {
-int largest;
+    int largest;
 
-if (a > b && b > c)
-{
-largest = a;
-}
-else if (b > a && a > c)
-{
-largest = b;
-}
-else
-{
-largest = c;
-}
+    if (a > b && b > c)
+    {
+        largest = a;
+    }
+    else if (b > a && a > c)
+    {
+        largest = b;
+    }
+    else
+    {
+        largest = c;
+    }
 
-return (largest);
+    return (largest);
 }
-cat main.h
+/*cat main.h*/
 #ifndef MAIN_H
 #define MAIN_H
 
